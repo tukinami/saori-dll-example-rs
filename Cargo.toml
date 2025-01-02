@@ -1,0 +1,24 @@
+[package]
+name = "saori-dll-example-rs"
+version = "1.0.0"
+edition = "2021"
+authors = [ "tukinami seika" ]
+license = "CC0-1.0"
+readme = "README.md"
+description = "example for SAORI of Ukagaka."
+
+
+[dependencies]
+ukagaka-dll-macro = { git = "https://github.com/tukinami/ukagaka-dll-macro.git" }
+saori-interface-rs = { git = "https://github.com/tukinami/saori-interface-rs.git" }
+
+[lib]
+name = "saoriexamplers"
+path = "src/lib.rs"
+crate-type = ["rlib", "cdylib"]
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1
