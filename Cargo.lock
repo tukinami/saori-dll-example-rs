@@ -68,7 +68,7 @@ checksum = "a246d82be1c9d791c5dfde9a2bd045fc3cbba3fa2b11ad558f27d01712f00569"
 
 [[package]]
 name = "saori-dll-example-rs"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "saori-interface-rs",
  "ukagaka-dll-macro",
@@ -76,17 +76,18 @@ dependencies = [
 
 [[package]]
 name = "saori-interface-rs"
-version = "1.0.0"
-source = "git+https://github.com/tukinami/saori-interface-rs.git#50b026a1b0a4df73003190079dd4bc3d9be6fde7"
+version = "1.0.2"
+source = "git+https://github.com/tukinami/saori-interface-rs.git#5460abf0ddb351152af8635f9486d12e1c186750"
 dependencies = [
  "encoding",
 ]
 
 [[package]]
 name = "ukagaka-dll-macro"
-version = "1.0.0"
-source = "git+https://github.com/tukinami/ukagaka-dll-macro.git#bc1efb6000f12b722d73fe7c132d11e168ec6bce"
+version = "1.1.0"
+source = "git+https://github.com/tukinami/ukagaka-dll-macro.git#bb806b2d54e60964233ff881fc0231e3bf3109f8"
 dependencies = [
+ "encoding",
  "winapi",
 ]
 

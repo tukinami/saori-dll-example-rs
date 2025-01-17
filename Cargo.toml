@@ -1,6 +1,6 @@
 [package]
 name = "saori-dll-example-rs"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 authors = [ "tukinami seika" ]
 license = "CC0-1.0"
@@ -9,8 +9,8 @@ description = "example for SAORI of Ukagaka."
 
 
 [dependencies]
-ukagaka-dll-macro = { git = "https://github.com/tukinami/ukagaka-dll-macro.git" }
-saori-interface-rs = { git = "https://github.com/tukinami/saori-interface-rs.git" }
+ukagaka-dll-macro = { git = "https://github.com/tukinami/ukagaka-dll-macro.git", version = "1.1.0" }
+saori-interface-rs = { git = "https://github.com/tukinami/saori-interface-rs.git", version = "1.0.2" }
 
 [lib]
 name = "saoriexamplers"

@@ -76,10 +76,13 @@ fn ukagaka_request(s: &[u8]) -> Vec<i8> {
         .unwrap_or(SaoriResponse::error_bytes())
 }
 
-// 関数`DllMain`を定義
-define_dll_main!();
-// 関数`unload`を定義
-define_load!();
+/// SHIORIから来たloadを処理する
+fn ukagaka_load(_path: &str) -> bool {
+    true
+}
+
+// 関数`load`と`loadu`を定義
+define_load!(ukagaka_load);
 // 関数`request`を定義
 define_request!(ukagaka_request);
 // 関数`unload`を定義
